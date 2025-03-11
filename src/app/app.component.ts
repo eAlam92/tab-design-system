@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tab-system';
+
+  isTab1: boolean = true; // Default to Tab 1
+
+  toggleTab(tab: number) {
+    this.isTab1 = tab === 1; // If tab 1 is clicked, set isTab1 to true; else, false
+  }
 }
